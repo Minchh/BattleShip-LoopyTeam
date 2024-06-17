@@ -25,3 +25,4 @@ The digital landscape offers a plethora of opportunities for gamified learning e
 - Go through the process of game management and code refactoring.
 ### References
 [irvinodjuana](https://github.com/irvinodjuana/Battleship)
+[BattleShipStrategy](http://www.datagenetics.com/blog/december32011/#google_vignette)

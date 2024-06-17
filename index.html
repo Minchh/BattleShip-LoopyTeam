@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
 
-  <body>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATTLESHIP: LOOPY TEAM</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body> <div class="main">
+    <div class="navigation">
+        <h1 id="nav-title">BATTLESHIP</h1>
+        
+        <div class="nav-mode">
+            <button class="mode-button" id="mode-easy">Easy</button>
+            <button class="mode-button" id="mode-medium">Medium</button>
+            <button class="mode-button" id="mode-hard">Hard</button>
+        </div>
+
+        <div class="nav-start">
+            <button id="start">Start</button>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="box-sidebar">
+        <!-- SHIP-PLACING SIDEBAR-->
+            <div class="place-ship-sidebar hidden-place">
+                <div class="place-your-ships">
+                    <h2 id="place-your-ships-text">PLACE YOUR SHIPS</h2>
+                </div>
+
+                <ul class="ship-choosing">
+                    <li class="ship-choose" id="place-ship-2">Patrol Boat</li>
+                    <l1 class="ship-choose" id="place-ship-3a">Submarine</l1>
+                    <li class="ship-choose" id="place-ship-3b">Destroyer</li>
+                    <l1 class="ship-choose" id="place-ship-4">Batteleship</l1>
+                    <li class="ship-choose" id="place-ship-5">Aircraft Carrier</li>
+                </ul>
+
+                <button id="rotate-button">ROTATE</button>
+                <button id="place-randomly-button">PLACE RANDOMLY</button>
+            </div>
+
+        <!-- COUNTING SIDEBAR-->   
+            <div class="count-sidebar-player hidden-count">
+                <ul class="ship-count">
+                    <li id="count-player-2">Patrol Boat</li>
+                    <l1 id="count-player-3a">Submarine</l1>
+                    <li id="count-player-3b">Destroyer</li>
+                    <l1 id="count-player-4">Batteleship</l1>
+                    <li id="count-player-5">Aircraft Carrier</li>
+                </ul>
+            </div>
+
+            <div class="count-sidebar-ai hidden-count">
+                <ul class="ship-count">
+                    <li id="count-ai-2">Patrol Boat</li>
+                    <l1 id="count-ai-3a">Submarine</l1>
+                    <li id="count-ai-3b">Destroyer</li>
+                    <l1 id="count-ai-4">Batteleship</l1>
+                    <li id="count-ai-5">Aircraft Carrier</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FLEET -->
+        <div class="player-fleet">
+            <h3 id="your-fleet">YOUR FLEET</h3>
+            <div class="player-fleet-box">
+                <div class="player-fleet-grid"></div>
+            </div>
+        </div>
+
+        <div class="ai-fleet">
+            <h3 id="enemy-fleet">ENEMY FLEET</h3>
+            <div class="ai-fleet-box">
+                <div class="ai-fleet-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+         <!-- WIN/LOSE MESSAGE-->
+         <div class="message">
+            <h4 id="win-message">YOU WIN!</h4>
+            <h4 id="lose-message">YOU LOSE!</h4>
+         </div>     
+    </div>
+</div> </body>
+
 </html>

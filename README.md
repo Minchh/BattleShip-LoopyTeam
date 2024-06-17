@@ -9,7 +9,7 @@
 |   3   |   Ngô Í Khang         | ITCSIU21192 |
 
 ### Play the game
-link: 
+Link: https://minchh.github.io/BattleShip-LoopyTeam/
 
 ### Techniques :
 - Language: Javascript, HTML, CSS

@@ -49,7 +49,7 @@ class RandomAI extends AI {
         this.allTargets.push([i, j]);
       }
     }
-    
+
     shuffle(this.allTargets);
   }
 
@@ -131,7 +131,7 @@ class ProbabilityAI extends AI {
     }
   }
 
-  /* Helper method for horizontal ship placement in selectTarget */
+  // Helper method for horizontal ship placement in selectTarget
   checkHorizontal(statusBoard, densityBoard, i0, j0, length) {
     // bounds check and obstacle check
     if (j0 + length > statusBoard[0].length) return;
@@ -147,7 +147,7 @@ class ProbabilityAI extends AI {
     }
   }
 
-  /* Helper method for horizontal ship placement in selectTarget */
+  //Helper method for horizontal ship placement in selectTarget
   checkVertical(statusBoard, densityBoard, i0, j0, length) {
     // bounds check and obstacle check
     if (i0 + length > statusBoard.length) return;
@@ -163,7 +163,7 @@ class ProbabilityAI extends AI {
     }
   }
 
-  /* Helper method for finding most probable indices in selectTarget */
+  // Helper method for finding most probable indices in selectTarget
   findMaxCell(densityBoard) {
     let maxVal = densityBoard[0][0];
     let maxIndices = [];

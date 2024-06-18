@@ -38,6 +38,30 @@ function shuffle(arr) {
   }
 }
 
+// This AI selects targets at random without repetition
+class RandomAI extends AI {
+  constructor() {
+    super();
+    this.allTargets = [];
+
+    for (let i = 0; i < 10; i++) {
+      for (let j = 0; j < 10; j++) {
+        this.allTargets.push([i, j]);
+      }
+    }
+    
+    shuffle(this.allTargets);
+  }
+
+  selectTarget() {
+    if (this.allTargets.length == 0) {
+      console.log("ERROR: Random algorithm should have finished");
+      return null;
+    }
+    return this.allTargets.pop();
+  }
+}
+
 // This AI use the Hunt/Target two mode strategy
 class HuntTargetAI extends AI {
   constructor() {

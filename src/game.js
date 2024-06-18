@@ -18,10 +18,8 @@ SIZES[DESTROYER] = 3;
 SIZES[SUBMARINE] = 3;
 SIZES[PATROLBOAT] = 2;
 
-/*
- * Class that handles the state of the game
- * and calls methods to update the UI
- */
+// Class that handles the state of the game
+// and calls methods to update the UI
 class Game {
   constructor(difficulty, playerBoard) {
     this.difficulty = difficulty;
@@ -32,7 +30,7 @@ class Game {
     this.NUM_SHIP_CELL = Object.values(SIZES).reduce((a, b) => a + b, 0);
   }
 
-  /* Update game state with player selected shot, return whether shot is valid */
+  // Update game state with player selected shot, return whether shot is valid
   processPlayerShot() {
     // parse selected cell and update state
     let i = this.playerSelect.charCodeAt(0) - "A".charCodeAt(0);
@@ -63,7 +61,7 @@ class Game {
     this.playerBoard[i][j] = cell;
   }
 
-  /* Update the enemy-side UI (for the player) and return if player won */
+  // Update the enemy-side UI (for the player) and return if player won
   updateEnemySide(newEnemyState) {
     // display to user if enemy ship sunk
     for (let ship of SHIPS) {

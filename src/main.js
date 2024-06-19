@@ -91,7 +91,9 @@ function handleStartClick() {
 
 // handle player cell selection on enemy board
 function handleBoardClick(id) {
-  game.playerSelect = id.substring(1);
+  if (game === null) {
+    alert("Please select start the game first!");
+  } else game.playerSelect = id.substring(1);
 }
 
 // display when a ship has sunk

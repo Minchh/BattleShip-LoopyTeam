@@ -128,8 +128,8 @@ class Game {
     }
 
     // render boards
-    this.playerState = getBoardState("playerboard", this.playerBoard);
-    this.enemyState = getBoardState("enemyboard", this.enemyBoard);
+    this.playerState = getBoardState("playerBoard", this.playerBoard);
+    this.enemyState = getBoardState("enemyBoard", this.enemyBoard);
     render(this.playerState);
     render(this.enemyState, false);
 
@@ -146,8 +146,8 @@ class Game {
       this.processEnemyShot();
 
       // fetch board state maps
-      const newEnemyState = getBoardState("enemyboard", this.enemyBoard);
-      const newPlayerState = getBoardState("playerboard", this.playerBoard);
+      const newEnemyState = getBoardState("enemyBoard", this.enemyBoard);
+      const newPlayerState = getBoardState("playerBoard", this.playerBoard);
 
       // update the UI, end game if winner found
       let playerWon = this.updateEnemySide(newEnemyState);

@@ -8,6 +8,10 @@
 |   2   |   Lê Bảo Trân  | ITCSIU21114 |
 |   3   |   Ngô Í Khang         | ITCSIU21192 |
 
+### Screenshots
+![Uploading image.png…]()
+
+
 ### Play the game
 Link: https://minchh.github.io/BattleShip-LoopyTeam/
 

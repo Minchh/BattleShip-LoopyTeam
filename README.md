@@ -9,7 +9,7 @@
 |   3   |   Ngô Í Khang         | ITCSIU21192 |
 
 ### Screenshots
-![Uploading image.png…]()
+![image](https://github.com/Minchh/BattleShip-LoopyTeam/assets/93875876/84a57a84-0816-41eb-85ee-d4e821492c7a)
 
 
 ### Play the game
